@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');0
+
+
+body {
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+    color: #505962;
+}
+
+/*-- Navigation --*/
+
+.navbar {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    background-color:rgba(0,0,0, .6)!important;
+
+}
+
+.navbar-nav li {
+    padding: 0.7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+    padding-top: 0.8rem;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #BA7F6D;
+}
+
+/*Landing Page ---*/
+
+.home-inner {
+    background-image: url(images/landingpage.jpeg);
+    position: fixed;
+}
+
+
+.py-2 {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+}
+
+.py-2 img {
+    width: 200px;
+}
+
+.py-2 h1 {
+    font-weight: 700;
+    text-shadow: .1rem .1rem .8rem black;
+    padding-bottom: 1rem;
+}
+
+.py-2 h3 {
+
+    font-size: 2rem;
+    text-shadow: .1rem .1rem .5rem black;
+    padding-bottom: 1.6rem;
+
+}
+
+.btn-lg {
+    border-width: medium;
+    border-radius: 0;
+    padding: 0.6rem; 1.2rem;
+    font-size: 1.1rem;
+}
+
+/* About Jey Section *?

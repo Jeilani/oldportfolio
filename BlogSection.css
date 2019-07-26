@@ -1,0 +1,95 @@
+body {
+    box-sizing: border-box;
+    color: rgb(98, 105, 107);
+    text-indent: 29px;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+#container {
+    margin: auto;
+    width: 80%;
+}
+
+#header {
+    position: fixed;
+    background-color: navy;
+    color: rgb(79, 82, 87);
+    height: 13%;
+    width: 83%;
+    float: right;
+    top: 0px;
+    margin-bottom: 10%;
+    margin-right: 10px;
+    text-align: right;
+}
+
+#header h1 {
+    padding-right: 10px;
+    font-size: 3.0em;
+}
+
+#header img {
+    margin-left: 50px;
+    margin-top: 50px;
+    border-radius: 150px;
+    display: inline;
+    float: left;
+}
+
+#header nav {
+    position: absolute;
+    top: 60%;
+    left: 8%;
+    width: 80%;
+    text-align: left;
+}
+
+#header nav ul li {
+    display: inline;
+    padding: 5%;
+}
+
+#header ul {
+    list-style: none;
+    margin: auto;
+}
+
+#main {
+    margin-top: 10%;
+}
+
+#sidebar {
+    float: left;
+    background-color: rgb(79, 82, 87);
+    color: white;
+    height: 100%;
+    width: 18%;
+    padding-right: 50px:
+}
+
+#posts {
+    float: right;
+    width: 80%;
+}
+
+#footer {
+    width: 80%;
+    background-color: navy;
+    clear: both;
+}
+
+.tab {
+    margin-left: 40px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(20, 28, 117);
+}
+
+
+}
+.firstletter {
+    font-size: 56px;
+    line-height: 0.5;
+    margin-top: 15px;
+}
