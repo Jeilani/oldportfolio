@@ -96,7 +96,14 @@ body {
 
 /* About Jey Section */
 
+#mycanvas {
+    position: absolute;
 
+    top: 100vh;
+
+    left: 0px;
+
+}
 
 .narrow {
     width: 75%;
