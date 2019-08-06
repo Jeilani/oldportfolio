@@ -8,68 +8,69 @@ var sketchProc = function(processingInstance) {
 
          // Adapted from Dan Shiffman, natureofcode.com
 
-                var generator = new Random(1);
+var Mover = function(r,g,b) {
+    this.position = new PVector(random(0, width/4), random(0, height/4));
+    this.velocity = new PVector(0, 0);
+    this.acceleration = new PVector(0, 0);
+    this.r = r;
+    this.g = g;
+    this.b= b;
 
-                var Mover = function(r, g, b) {
-                    this.position = new PVector(random(0, width/2), random(0, height/2));
-                    this.velocity = new PVector(0, 0);
-                    this.acceleration = new PVector(0, 0);
-                    this.r = r;
-                    this.g = g;
-                    this.b = b;
-                };
+};
 
-                Mover.prototype.update = function() {
-                    var mouse = new PVector(mouseX, mouseY);
-                    var dir = PVector.sub(mouse, this.position);
-                    dir.normalize();
-                    dir.mult(0.5);
-                    this.acceleration = dir;
-                    this.velocity.add(this.acceleration);
-                    this.velocity.limit(10);
-                    this.position.add(this.velocity);
-                };
+Mover.prototype.update = function() {
+    var mouse = new PVector(mouseX, mouseY);
+    var dir = PVector.sub(mouse, this.position);
+    dir.normalize();
+    dir.mult(0.5);
+    this.acceleration = dir;
+    this.velocity.add(this.acceleration);
+    this.velocity.limit(10);
+    this.position.add(this.velocity);
+};
 
-                Mover.prototype.display = function() {
-                    stroke(0);
-                    strokeWeight(2);
-                    noStroke();
-                    fill(this.r,this.g,this.b);
-                    ellipse(this.position.x, this.position.y, 20, 20);
-                };
+Mover.prototype.display = function() {
+    stroke(0);
+    strokeWeight(2);
+    noStroke();
+    fill(this.r,this.g,this.b);
+    ellipse(this.position.x, this.position.y, 20, 20);
+};
 
-                Mover.prototype.checkEdges = function() {
+Mover.prototype.checkEdges = function() {
 
-                    if (this.position.x > width) {
-                        this.position.x = 0;
-                    } else if (this.position.x < 0) {
-                        this.position.x = width;
-                    }
+    if (this.position.x > width) {
+        this.position.x = 0;
+    } else if (this.position.x < 0) {
+        this.position.x = width;
+    }
 
-                    if (this.position.y > height) {
-                        this.position.y = 0;
-                    } else if (this.position.y < 0) {
-                        this.position.y = height;
-                    }
-                };
+    if (this.position.y > height) {
+        this.position.y = 0;
+    } else if (this.position.y < 0) {
+        this.position.y = height;
+    }
+};
 
+var mover = new Mover();
 
-                var moverlist = [];
+var moverlist = [];
 
-                for (var i = 0; i < 10; i++){
-                    moverlist.push(new Mover(random(0,255), random(0,255), random(0,255)));
-                }
+for (var i = 0; i < 10; i++){
+    moverlist.push(new Mover(random(0,255), random(0,255), random(0,255)));
 
-                var draw = function() {
-                    background(255, 255, 255);
+}
 
-                    for (var i = 0; i < moverlist.length; i++){
-                    moverlist[i].update();
-                    moverlist[i].checkEdges();
-                    moverlist[i].display();
+var draw = function() {
+    background(255, 255, 255);
 
-                    }
-                };
+    for (var i = 0; i < moverlist.length; i++){
+    moverlist[i].update();
+    moverlist[i].checkEdges();
+    moverlist[i].display();
+    }
+};
+
 
 
 }};
