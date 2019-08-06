@@ -8,6 +8,8 @@ var sketchProc = function(processingInstance) {
 
          // Adapted from Dan Shiffman, natureofcode.com
 
+var ballcount = 9;
+
 var Mover = function(r,g,b) {
     this.position = new PVector(random(0, width/4), random(0, height/4));
     this.velocity = new PVector(0, 0);
@@ -61,7 +63,17 @@ for (var i = 0; i < 10; i++){
 
 }
 
-var draw = function() {
+
+mouseClicked = function () {
+    moverlist.push(new Mover(random(0,255), random(0,255), random(0,255)));
+    moverlist[ballcount].position.x = mouseX;
+    moverlist[ballcount].position.y = mouseY;
+    ballcount++;
+
+};
+
+
+draw = function() {
     background(255, 255, 255);
 
     for (var i = 0; i < moverlist.length; i++){
