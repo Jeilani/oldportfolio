@@ -14,10 +14,15 @@ body {
     margin-top: -4rem;
 }
 
+audio {
+visibility: hidden;
+color: rgba(0, 0, 0, 0.75);
+}
+
 /*-- Navigation --*/
 
 .navbar {
-    text-transform: uppercase;
+    text-transform: lowercase;
     font-weight: 700;
     font-size: 0.9rem;
     letter-spacing: 0.1rem;
@@ -64,7 +69,7 @@ body {
     top: 28%;
     z-index: 1;
     color: white;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 
 .py-2 img {
@@ -152,7 +157,7 @@ body {
 
 h3.heading {
     font-size: 1.9rem;
-    text-transform: uppercase;
+    text-transform: lowercase;
     margin-bottom: 1.9rem;
 
 
@@ -171,7 +176,7 @@ svg.svg-inline--fa {
 
 .feature h3 {
     font-size: 1.3rem;
-    text-transform: uppercase;
+    text-transform: lowercase;
     padding-bottom: .4rem;
 
 }
@@ -183,9 +188,7 @@ svg.svg-inline--fa {
 
 /* Blog Posts section with fixed background image */
 
-#blogposts {
-    height: 1000px;
-}
+
 
 .fixed {
     background-image: url(Images/2ndfixedbackground.jpg);
@@ -196,6 +199,7 @@ svg.svg-inline--fa {
     background-color:rgba(0, 0, 0, 0.75);
     color: white;
     padding: 7rem 2rem;
+    height: 100%;
 
 }
 
@@ -228,10 +232,7 @@ blockquote .svg-inline--fa {
 footer {
     background-color: #40474e;
     color: white;
-    padding: 2rem 0 2rem;
-    margin-top: 1rem;
-    margin: auto;
-    float: none;
+
 }
 
 footer img {
@@ -252,13 +253,9 @@ footer .svg-inline--fa:hover {
 
 }
 
-hr .socket {
-    width: 100%;
-}
 
-#contact {
-    margin: auto;
-}
+
+
 
 @media (max-width: 767px) {
     .py-2 h1 {
