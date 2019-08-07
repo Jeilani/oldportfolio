@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="nunotheme/css/fixed.css">
     <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="Images/facepic.png">
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
@@ -67,7 +68,10 @@
             <img src="Images/facepic2.png" class="img-responsive rounded-circle">
             <h1>Welcome to Jey's Portfolio</h1>
             <h3>Front End Web Developer</h3>
-            <a class="btn btn-outline-light btn-lg" href="#">Hire Me</a>
+            <a class="btn btn-outline-light btn-lg" href="#">Hire Me</a><br>
+            <audio controls autoplay>
+                    <source src="Booty Meat Soulja Boy.mp3" source="audio/mpeg">
+                </audio>
 
         </div>
 
@@ -89,20 +93,20 @@
 
                 <div class="col-md-8 col-xl-7 narrow">
 
-                    <p>
+                    <p class="lead3">
                         Hello World. I'm a front end web developer.
                         Since graduating from <a href="https://msudenver.edu/" target="_blank">MSU Denver</a> recently, I've switched gears and fallen in love with programming and its endless possibilites.
                     </p>
-                    <p>
+                    <p class="lead3">
                         I've taken on the responsibility of being a student of programming, with a special interest in web development.
                         I first was able to become an expert in JavaScript through learning it in a <a href="https://p5js.org/" target="_blank">processing environment</a>, which allowed me to materialize animation design ideas.
                         Processing is what is responsible for the animation behind this div. If you didn't notice, the colored objects are following your mouse. Keep clicking anywhere around the div for more balls to appear. (Works better on desktop). I'm also experienced in jQuery and have utilized a variety of its functionality.
                     </p>
-                    <p>
+                    <p class="lead3">
                         My current goal is to contribute to an organization that is forward thinking and
                         implements current solutions to problems.
                     </p>
-                    <p>
+                    <p class="lead3">
                         I am hungry to apply my skills in HTML, CSS and JavaScript and it's libraries
                         to use.
                     </p>
@@ -138,22 +142,22 @@
                 <!--Start of Row-->
                 <div class="row text-center">
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 card">
                         <div class="feature">
                             <i class="fas fa-play-circle fa-4x" da-fa-transform="shrink-2 up-5"></i>
-                            <h3>Hopper Project</h3>
+                            <h3>Air Jordan Project</h3>
                             <p>This project required ability to create objects with several functionality and properties. Scene changes were completely </p>
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 card">
                             <div class="feature">
                                 <i class="fas fa-play-circle fa-4x" da-fa-transform="shrink-2 up-5"></i>
                                 <h3>Asteroid Project</h3>
                                 <p>This project required heavy application of trigonmetry and innovative ideas to implement ease of use</p>
                             </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 card">
                             <div class="feature">
                                 <i class="fas fa-play-circle fa-4x" da-fa-transform="shrink-2 up-5"></i>
                                 <h3>Word Game</h3>
@@ -257,7 +261,7 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="Images/abdullah.jpeg">
+                            <img src="Images/abdullah.jpeg" class="img-fluid">
                         </div>
                         <div class="col-md-8">
                             <blockquote class="blockquote"><i class="fas fa-quote-left"></i> <br>It was an absolute pleasure to work
@@ -301,9 +305,6 @@
 
         </div>
         <!--End of Jumbotron section-->
-        <div>
-            -
-        </div>
 
     </div>
 
@@ -311,25 +312,25 @@
 
 
     <!-- Start Of Contact Section-->
-    <div id = "contact" class ="offset">
-
-        <footer>
-            <div class="row text-center">
-
+    <div id="contact" class ="offset">
+        <footer class= "text-center">
+            <div class="row">
                 <div class="col-md-5">
                     <img src="Images/JPLogo.png">
                     <p>I'd love the opportunity to speak with you and dive into the
                     details as to who I am and what I can bring. Contact me through
                     these mediums.
-                </p>
-                <strong>Contact Info</strong>
-                <p>
-                    (720) 921-4481 <br> jeilanijm25@gmail.com.
-                </p>
+                    </p>
+                    <strong>Contact Info</strong>
+                    <p>
+                    (720) 921-4481
+                    <br>
+                     jeilanijm25@gmail.com.
+                    </p>
 
-                <a href="http://www.linkedin.com/in/jeilani25/" target="_blank"> <i class="fab fa-linkedin fa-2x" ></i></a>
-                <a href="linkedin.com/in/jeilani25/" target="_blank"> <i class="fab fa-facebook-f fa-2x" ></i></a>
-                <a href="linkedin.com/in/jeilani25/" target="_blank"> <i class="fab fa-instagram fa-2x" ></i></a>
+                    <a href="http://www.linkedin.com/in/jeilani25/" target="_blank"> <i class="fab fa-linkedin fa-2x" ></i></a>
+                    <a href="linkedin.com/in/jeilani25/" target="_blank"> <i class="fab fa-facebook-f fa-2x" ></i></a>
+                    <a href="linkedin.com/in/jeilani25/" target="_blank"> <i class="fab fa-instagram fa-2x" ></i></a>
                 </div>
 
                 <!--<hr class="socket">-->
@@ -341,14 +342,13 @@
 
     <!-- End Of Contact Section-->
 
-
     <!-- END OF CONTAINER-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
     <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
-    <script src="Ballpop.js"></script>
+    <script src="ballpop.js"></script>
 </body>
 
 </html>
