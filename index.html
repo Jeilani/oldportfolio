@@ -11,7 +11,8 @@
 
     <link rel="stylesheet" href="nunotheme/css/fixed.css">
     <link rel="stylesheet" href="main.css">
-    <link rel="icon" href="Images/facepic.png">
+    <link rel="icon"id = "headicon" href="Images/facepic.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
@@ -25,6 +26,7 @@
 
         <nav class = "navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <a class="navbar-brand" href="#"><img src="Images/TransparentJPLogoWordsOnly.png" "></a>
+
             <button class="navbar-toggler" type = "button" data-toggle="collapse" data-target="#navbarResponsive">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -68,8 +70,8 @@
             <img src="Images/facepic2.png" class="img-responsive rounded-circle">
             <h1>Welcome to Jey's Portfolio</h1>
             <h3>Front End Web Developer</h3>
-            <a class="btn btn-outline-light btn-lg" href="mailto:jeilanijm25@icloud.com?subject = Porfolio">Let's Chat</a><br>
-  
+            <a class="btn btn-outline-light btn-lg" href="mailto:jeilanijm25@icloud.com?subject=Portfolio">let's get in touch</a><br>
+
         </div>
 
         <!-- End of Landing Section-->
@@ -79,16 +81,16 @@
     <!-- End Of Home Section-->
 
     <!-- Start Of About Me Section-->
-    <div id="aboutjey" class="offset ">
+    <div id="aboutjey" class="offset">
             <canvas id="mycanvas"></canvas>
 
             <div class="row">
-                <div class="col-md-4 col-xl-5 align-middle">
+                <div class="col-md-4 col-xl-5 align-middle" data-aos="fade-right" data-aos-duration="1500">
                     <h3 class="heading text-center">About Jey</h3>
                     <div class="heading-underline"> </div>
                 </div>
 
-                <div class="col-md-8 col-xl-7 narrow">
+                <div class="col-md-8 col-xl-7 narrow" data-aos="fade-left" data-aos-duration="1500">
 
                     <p class="lead3">
                         Hello World. I'm a front end web developer.
@@ -120,14 +122,29 @@
     <!-- End Of About Section-->
 
     <!-- Start Of Mini Projects Section-->
-    <div id = "projects" class="offset">
+    <div id="projects" class="offset">
+
+
 
         <!--Start of Jumbotron-->
         <div class="jumbotron">
+            <div class="row">
+                <div class="col-6">
 
+                </div>
+                <div class="speech-bubble col-5 justify-content-end" data-aos="fade-down-left" data-aos-duration="1500" id="notification">
+                    <p>
+                        Hey hey. Just a little info. This section is categorized by the mediums through which I created web dev projects. Most of them have been through processing so far. The more my web dev experience grows, the more that will appear here so check back in the future.
+                    </p>
+                    <p>
+                        <button id="coolbeans" class="aligh-right">Cool Beans</button>
+                    </p>
+                </div>
+            </div>
             <!-- Start of Narrow-->
 
             <div class="narrow">
+
 
                 <div class="col-12">
 
@@ -137,28 +154,37 @@
                 </div>
 
                 <!--Start of Row-->
-                <div class="row text-center">
+                <div class="row text-center welcome">
 
-                    <div class="col-md-4 card">
+                    <div class="col-md-4 card" data-aos="zoom-in">
                         <div class="feature">
-                            <i class="fas fa-play-circle fa-4x" da-fa-transform="shrink-2 up-5"></i>
+                            <img src = "ProcessingImages/cryingmike.png" width="100">
                             <h3>Air Jordan Project</h3>
-                            <p>This project required ability to create objects with several functionality and properties. Scene changes were completely </p>
+                            <p>Through the processing enviornment I was able to use object-oriented programming principles to allow a user to test the powers of
+                                air jordan himself to score as many points as possible while avoiding the blocking power of shaq in level 2. </p> <p></p>I also heavily utizilized the power of conditional statements in scene changes </p>
+                                <a href="michaeljordanflappy.html" target="_blank"><button class= "btn btn-success">Test</button></a>
+                                <a href="https://github.com/Jeilani/Portfolio/blob/master/michaeljordanflappy.js" target="_blank"><button class="btn btn-warning"> Source Code </button></a>
                         </div>
                     </div>
 
-                    <div class="col-md-4 card">
+                    <div class="col-md-4 card" data-aos="zoom-in" data-aos-duration="1500">
                             <div class="feature">
-                                <i class="fas fa-play-circle fa-4x" da-fa-transform="shrink-2 up-5"></i>
-                                <h3>Asteroid Project</h3>
-                                <p>This project required heavy application of trigonmetry and innovative ideas to implement ease of use</p>
+                                <img src="ProcessingImages/asteroid.png" width="100">
+                                <h3>Trig Spaceship Project</h3>
+                                <p>Although not the most visually striking animation, this minitiaure spaceship flying through space required strategic brainstorming. and an ability to combine math and code/</p>
+                                <p>
+                                     It took a few minutes but I was able to tap deep enough into the principles of trigonometry and translate it into code. That combined with object oriented programming and conditional statements creates the rotating spaceship you see here. Check the source code and documentation to see.</p>
+                                <a href="asteroid.html" target="_blank"><button class="btn btn-success">Test</button></a>
+                                <button class="btn btn-warning"> Source Code </button>
                             </div>
                     </div>
-                    <div class="col-md-4 card">
+                    <div class="col-md-4 card" data-aos="zoom-in" data-aos-duration="2000">
                             <div class="feature">
-                                <i class="fas fa-play-circle fa-4x" da-fa-transform="shrink-2 up-5"></i>
-                                <h3>Word Game</h3>
-                                <p>This project required heavy application of trigonmetry and innovative ideas to implement ease of use</p>
+                                <img src="ProcessingImages/mountainrange.png" width="110" id="mountainpic">
+                                <h3>Random Generator</h3>
+                                <p>Sometimes, randomness is good. Through processing, I was able to deliver a mountain range whose peaks and valleys are never repeated through code. </p> <p>If you want to deliver variety within a piece of content, it's possible. It's as simple as soft-coding your content with variables that have random values everytime you load. </p>
+                                <a href="mountainrange.html" target="_blank"><button class="btn btn-success">Test</button></a>
+                                <button class="btn btn-warning"> Source Code </button>
                             </div>
                     </div>
 
@@ -178,50 +204,71 @@
 
 
     <!-- Start Of Blog Posts Section-->
-    <div id = "blogposts" class ="offset">
+    <div id = "blogposts" class ="offset" >
 
         <!-- Start of Fixed Background section-->
         <div class="fixed-background">
 
             <!--Start of Row Dark-->
-            <div class="row dark text-center">
-                    <div class="col-12">
+            <div class="row dark text-center justify-content-center">
+                    <div class="col-12" data-aos="fade-up">
 
                             <h3 class="heading text-center">Blog Posts</h3>
                             <div class="heading-underline"> </div>
 
                     </div>
 
-                    <div class="col-md-4">
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, dicta.</h3>
+                    <div class="col-md-4" data-aos="zoom-in-up">
+                        <p class="dates">Posted on June 8, 2019</p>
+                        <h3>Time and Effort are Key</h3>
                         <div class="feature">
 
                         </div>
-                        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta nisi aperiam laborum laboriosam voluptate pariatur qui hic dolorum illo eius! </p>
+                        <p class="lead">Programming really is more about time and effort than it is about anything else. Well, atleast for web development.
+                            Make sure you put the time in. At first, it seems pretty brutal to start you computer/laptop and delve into this seemingly endless
+                            pool of information...
+                        </p>
+                        <a href="#">Read Blog Entry</a>
                     </div>
 
 
 
 
-                    <div class="col-md-4">
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, placeat.
+                    <div class="col-md-4" data-aos="zoom-in-up" data-aos-duration="1500">
+                            <p class="dates">Posted on April 9, 2019</p>
+                        <h3>Prioritize Documentation
                         </h3>
                         <div class="feature">
 
                         </div>
-                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam ducimus eos quae voluptatum veritatis provident quas nesciunt possimus ipsum! Doloribus!</p>
+                        <p class="lead">Documentation is key. I heard it pretty often in my earliest of stages but how imperative that principle is didn't really kick in until
+                            now that I've had a few projects that I've worked on. I've gone back and realized, the extent to which things look like coding mumbo jumbo...
+                        </p>
+                        <a href="#">Read Blog Entry</a>
                     </div>
 
 
 
 
 
-                    <div class="col-md-4">
-                        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, eveniet!</h3>
+                    <div class="col-md-4" data-aos="zoom-in-up" data-aos-duration="2000">
+                            <p class="dates">Posted on Feb 3, 2019</p>
+                        <h3>Why I Chose JavaScript/Web Dev</h3>
                         <div class="feature">
 
                         </div>
-                        <p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel maiores totam perspiciatis similique error quas consequatur impedit nisi quaerat aperiam! </p>
+                        <p class="lead">Javascript is going to be the language that I want to hone in on. After doing a few lessons in Khan Academy, I'm hooked. Although I do want to become an expert at Python some day, I'm loving the experience as learning Javascript as my first language... </p>
+                        <a href="#">Read Blog Entry</a>
+                    </div>
+
+                    <div class="col-md-4" data-aos="zoom-in-up" data-aos-duration="2000">
+                            <p class="dates">Posted on Jan 3, 2019</p>
+                        <h3>2nd <del>Time</del> Degree's a Charm?</h3>
+                        <div class="feature">
+
+                        </div>
+                        <p class="lead">My first blog post. I'm happy that I am willing to document this journey. "What journey? ", you may ask. Well, I am going on a quest to be a completely independent self-learner. Okay, maybe not completely. I am getting some help from all the authors of the content that I will be consuming on the internet. Okay, that sounds way less cool but a lot more accurate...</p>
+                        <a href="#">Read Blog Entry</a>
                     </div>
 
 
@@ -249,18 +296,18 @@
     <div id="testimonials" class="offset">
         <!--Start of Jumbotron-->
         <div class="jumbotron">
-            <div class="col-12 text-center">
+            <div class="col-12 text-center" data-aos="zoom-in">
                 <h3 class="heading">Testimonials</h3>
                 <div class="heading-underline"></div>
             </div>
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6" >
                     <div class="row">
                         <div class="col-md-4">
-                            <img src="Images/abdullah.jpeg" class="img-fluid">
+                            <img src="Images/abdullah.jpeg" data-aos="fade-up-right"class="img-fluid" data-aos-duration="1200">
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-md-8" data-aos="fade-up-right">
                             <blockquote class="blockquote"><i class="fas fa-quote-left"></i> <br>It was an absolute pleasure to work
                                 with Jey. He was a strong leader
                                 within the Muslim Student Association.
@@ -278,12 +325,12 @@
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6" >
                         <div class="row">
                                 <div class="col-md-4">
-                                    <i class="far fa-user fa-4x"></i>
+                                    <i class="far fa-user fa-4x" data-aos="fade-up-left" data-aos-duration="1500"></i>
                                 </div>
-                                <div class="col-md-8">
+                                <div class="col-md-8" data-aos="fade-up-left">
                                     <blockquote class="blockquote"><i class="fas fa-quote-left"></i> <br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Impedit temporibus
                                         deleniti error unde voluptatem? Id, similique dolorem. Voluptas,
                                         quibusdam. Officiis assumenda tempore hic
@@ -325,9 +372,11 @@
                      jeilanijm25@gmail.com.
                     </p>
 
-                    <a href="http://www.linkedin.com/in/jeilani25/" target="_blank"> <i class="fab fa-linkedin fa-2x" ></i></a>
-                    <a href="linkedin.com/in/jeilani25/" target="_blank"> <i class="fab fa-facebook-f fa-2x" ></i></a>
-                    <a href="linkedin.com/in/jeilani25/" target="_blank"> <i class="fab fa-instagram fa-2x" ></i></a>
+                    <div class="social-linkss">
+                        <a href="http://www.linkedin.com/in/jeilani25/" target="_blank"> <i class="fab fa-linkedin fa-2x" ></i></a>
+                        <a href="linkedin.com/in/jeilani25/" target="_blank"> <i class="fab fa-facebook-f fa-2x" ></i></a>
+                        <a href="linkedin.com/in/jeilani25/" target="_blank"> <i class="fab fa-instagram fa-2x" ></i></a>
+                    </div>
                 </div>
 
                 <!--<hr class="socket">-->
@@ -345,7 +394,27 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
     <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="Ballpop.js"></script>
+    <script>
+    AOS.init();
+    </script>
+    <script>
+          $(function() {
+    $('#toggle-two').bootstrapToggle({
+      on: 'Enabled',
+      off: 'Disabled'
+    });
+  })
+
+
+        $("#coolbeans").on("click", function(){
+            console.log("it worked");
+            $(".speech-bubble").css("display", "none");
+        });
+
+    </script>
+
 </body>
 
 </html>
