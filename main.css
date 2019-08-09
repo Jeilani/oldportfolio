@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
 
 
+#headicon {
+    border-radius: 50%;
+}
+
 body {
     overflow-x: hidden;
     font-family: 'Lato', sans-serif;
@@ -14,6 +18,9 @@ body {
     margin-top: -4rem;
 }
 
+a{
+ color: inherit;
+}
 
 /*-- Navigation --*/
 
@@ -103,7 +110,10 @@ body {
     top: 100vh;
 
     left: 0px;
+}
 
+canvas:active, canvas:focus {
+    outline: none;
 }
 
 .narrow {
@@ -144,6 +154,46 @@ body {
 
 /*Mini Projects sectino */
 
+#coolbeans {
+    background-color: #BA7F6D;
+    border: 1px solid white;
+    color: white;
+}
+
+#coolbeans:hover {
+    background-color: white;
+    color: #BA7F6D;
+    border: 1px solid white;
+}
+#coolbeans:active, #coolbeans:focus {
+    outline: none;
+}
+
+#projects {
+    position: relative;
+}
+
+.speech-bubble {
+	position: relative;
+	background: #BA7F6D;
+    border-radius: .4em;
+    color: white;
+}
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	height: 0;
+	border: 64px solid transparent;
+	border-left-color:#BA7F6D;
+	border-right: 0;
+	border-bottom: 0;
+	margin-top: -32px;
+	margin-right: -64px;
+}
+
 .jumbotron {
     margin-bottom: 0px;
     padding: 2rem 0rem 3rem;
@@ -181,10 +231,30 @@ svg.svg-inline--fa {
 
 
 }
+#mountainpic{
+    margin-bottom: 1rem;
+}
 
+
+.btn-success{
+    background-color: #324001;
+    border: none;
+}
+
+.btn-warning {
+    background-color: #BA7F6D;
+    border: none;
+}
 /* Blog Posts section with fixed background image */
 
+#blogposts h3{
+    color: white
+}
 
+.dates {
+    margin-bottom: 0;
+    font-size: .75rem;
+}
 
 .fixed {
     background-image: url(Images/2ndfixedbackground.jpg);
@@ -213,17 +283,29 @@ svg.svg-inline--fa {
 /*Testiominals section */
 #testimonials img {
     border-radius: 50%;
+    width: 70%;
 }
 
 blockquote .svg-inline--fa {
     color: #BA7F6D;
 }
 
-#contact hr {
-    border-top: .5rem solid #BA7F6D;
-}
 
 /* contact section*/
+
+
+
+.social-linkss {
+    display: flex;
+    flex-direction: row;
+}
+
+footer div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 footer {
     background-color: #40474e;
@@ -249,7 +331,9 @@ footer .svg-inline--fa:hover {
 
 }
 
-
+.social-links a {
+    display: inline;
+}
 
 
 
