@@ -1,0 +1,29 @@
+body {
+    font: charter;
+}
+
+
+#diploma {
+width: 30%;
+
+}
+
+
+.blogsection {
+    position: relative;
+    top: 10vh;
+}
+
+@media (min-width: 720px) {
+    .blogsection .container{
+        position: relative;
+        top: 10%;
+        width: 60%;
+    }
+}
+
+
+.story {
+
+
+}
