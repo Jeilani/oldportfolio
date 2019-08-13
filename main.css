@@ -174,13 +174,16 @@ canvas:active, canvas:focus {
 }
 
 .speech-bubble {
-	position: relative;
+    position: absolute;
+    right: 5%;
+    top: 40%;
 	background: #BA7F6D;
     border-radius: .4em;
     color: white;
+    z-index: 100;
 }
 
-.speech-bubble:after {
+.speech-bubble::after {
 	content: '';
 	position: absolute;
 	right: 0;
@@ -192,6 +195,32 @@ canvas:active, canvas:focus {
 	border-bottom: 0;
 	margin-top: -32px;
 	margin-right: -64px;
+}
+
+@media (max-width: 600px) {
+    .speech-bubble {
+        position: absolute;
+        right: 5%;
+        top: 10%;
+        background: #BA7F6D;
+        border-radius: .4em;
+        color: white;
+        z-index: 100;
+    }
+
+    .speech-bubble::after {
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 50%;
+        height: 0;
+        border: 64px solid transparent;
+        border-left-color:#BA7F6D;
+        border-right: 0;
+        border-bottom: 0;
+        margin-top: -32px;
+        margin-right: -64px;
+    }
 }
 
 .jumbotron {
@@ -237,7 +266,7 @@ svg.svg-inline--fa {
 
 
 .btn-success{
-    background-color: #324001;
+    background-color: #335A7D;
     border: none;
 }
 
@@ -281,7 +310,7 @@ svg.svg-inline--fa {
 }
 
 /*Testiominals section */
-#testimonials img {
+#recommendations img {
     border-radius: 50%;
     width: 70%;
 }
@@ -327,7 +356,7 @@ footer .svg-inline--fa {
 }
 
 footer .svg-inline--fa:hover {
-    color: #324001;
+    color: #335A7D;
 
 }
 
