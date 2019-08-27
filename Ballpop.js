@@ -1,4 +1,7 @@
 var windowwidth = document.documentElement.clientWidth;
+
+
+
 var divheight = document.getElementById('aboutjey').clientHeight;
 
 var sketchProc = function(processingInstance) {
@@ -74,7 +77,14 @@ mouseClicked = function () {
 
 
 draw = function() {
-    background(255, 255, 255);
+
+    if (darkmodeon) {
+    background(0, 0, 0);
+    }
+    else
+    {
+        background (255, 255, 255)
+    }
 
     for (var i = 0; i < moverlist.length; i++){
     moverlist[i].update();
