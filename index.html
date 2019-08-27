@@ -392,7 +392,7 @@
     <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
     <script src="https://cdn.jsdelivr.net/processing.js/1.4.8/processing.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="Ballpop.js"></script>
+
     <script>
     AOS.init();
     </script>
@@ -410,10 +410,84 @@
             $(".speech-bubble").css("display", "none");
         });
 
-    </script>
+        var darkmodeon = false;
+
+        var blogpostdark= document.getElementsByClassName("blogpostdark")
+        var darkmode1 = document.getElementsByClassName("first-dark");
+        var darkmode2 = document.getElementsByClassName("dark-mode");
+        var darkmode3 = document.getElementsByClassName("dark-modetwo");
+        var darkmode4 = document.getElementsByClassName("dark-transparent");
+        var darkmodebutton = document.getElementById("darkmodebutton");
+
+
+
+
+
+        darkmodebutton.addEventListener("click", function(){
+
+
+           if (!darkmodeon) {
+
+            for (var i = 0; i < blogpostdark.length; i++){
+               blogpostdark[i].classList.add("blogpostdarkJ");
+            }
+
+               for(var i = 0; i < darkmode1.length; i++){
+            darkmode1[i].classList.add("first-darkJ");
+        }
+
+                for(var i = 0; i < darkmode2.length; i++){
+                    darkmode2[i].classList.add("dark-modeJ");
+                }
+
+
+                for(var i = 0; i < darkmode3.length; i++){
+            darkmode3[i].classList.add("dark-modetwoJ");
+                }
+
+                for(var i = 0; i < darkmode4.length; i++){
+            darkmode4[i].classList.add("dark-transparentJ");
+
+        }
+                    this.textContent = "Dark Mode Off";
+               darkmodeon = true;
+           }
+           else{
+
+            for (var i = 0; i < blogpostdark.length; i++){
+               blogpostdark[i].classList.remove("blogpostdarkJ");
+            }
+
+            for(var i = 0; i < darkmode1.length; i++){
+            darkmode1[i].classList.remove("first-darkJ");
+        }
+
+                for(var i = 0; i < darkmode2.length; i++){
+                    darkmode2[i].classList.remove("dark-modeJ");
+                }
+
+
+                for(var i = 0; i < darkmode3.length; i++){
+            darkmode3[i].classList.remove("dark-modetwoJ");
+                }
+
+                for(var i = 0; i < darkmode4.length; i++){
+            darkmode4[i].classList.remove("dark-transparentJ");
+
+        }
+
+               this.textContent = "Dark Mode On";
+               darkmodeon = false;
+           }
+
+
+        });
+
+
+        </script>
+    <script src="Ballpop.js"></script>
 
 </body>
 
 </html>
-
 
