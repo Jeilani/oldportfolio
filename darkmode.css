@@ -1,0 +1,29 @@
+
+.first-darkJ {
+    background-color: black;
+}
+
+.dark-modeJ {
+    background-color: black !important;
+    color: #BBB6B5;
+}
+
+.blogpostdarkJ, .blogpostdarkJ h3{
+    color: #BBB6B5 !important;
+    border: #BBB6B5
+}
+
+.dark-modetwoJ{
+    background-color: #393838 !important;
+}
+.dark-transparentJ {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 7rem 2rem;
+    height: 100%;
+
+}
