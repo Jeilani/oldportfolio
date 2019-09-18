@@ -25,7 +25,7 @@
 
         <!--Star of Navigation-->
 
-        <nav class = "navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <nav class = "navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
 
                     <a class="navbar-brand" href="#"><img src="Images/JPLogoWordsOnly.png"></a>
                     <button type="button" class="btn btn-dark btn-sm disabled"  id="darkmodebutton">Dark Mode On</button>
@@ -93,38 +93,24 @@
                     <div class="heading-underline"> </div>
                 </div>
 
-                <div id = "MagicCarousel" class="col-md-5 col-xl-7 narrow carousel slide" data-aos="fade-left" data-aos-duration="1500" data-ride="carousel">
-                        <ol class="carousel-indicators">
-                            <li data-target="#MagicCarousel" data-slide-to ="0" class="active"></li>
-                            <li data-target="#MagicCarousel" data-slide-to ="1"></li>
-                            <li data-target="#MagicCarousel" data-slide-to ="2"></li>
-                            <li data-target="#MagicCarousel" data-slide-to ="3"></li>
+                <div id = "MagicCarousel" class="col-md-5 col-xl-7 narrow carousel slide" data-aos="fade-left" data-aos-duration="8000" data-ride="carousel">
 
-                        </ol>
 
                         <div class="carousel-inner" role="list-box">
                             <p class="lead carousel-item active">
                                 Hello World. I'm a front end web developer.
                                 Since graduating from <a href="https://msudenver.edu/" target="_blank">MSU Denver</a> recently, I've switched gears and fallen in love with programming and its endless possibilites.
-                            </p>
-                            <p class="lead carousel-item">
                                 I've taken on the responsibility of being a student of programming, with a special interest in web development.
+                                <br>
                                 I first was able to become an expert in JavaScript through learning it in a <a href="https://p5js.org/" target="_blank">processing environment</a>, which allowed me to materialize animation design ideas.
                                 Processing is what is responsible for the animation behind this div, which I coded myself. If you didn't notice, the colored objects are following your mouse. Keep clicking anywhere around the div for more balls to appear. (Works better on desktop). I'm also experienced in jQuery and have utilized a variety of its functionality.
                             </p>
                             <p class="lead carousel-item">
                                 My current goal is to get hired at an organization I can contribute to at a high level. I want to join a forward thinking organization where I can continue to learn and grow in my abilities, utilizing my skills, and personal character to thrive in any position I hold, while striving to advance in the company and contribute to its success.
-                            </p>
-                            <p class="lead carousel-item">
                                 I am hungry to apply my skills in HTML, CSS and JavaScript, jQuery and even more eager to learn and absorb my environment.
                             </p>
                         </div>
-                        <a href="#MagicCarousel" id="carouselbutton" class="carousel-control-prev" role="button" data-slide="prev">
-                            <span id="carouselbutton" class="carousel-control-prev-icon"></span>
-                        </a>
-                        <a href="#MagicCarousel" id="carouselbutton" class="carousel-control-next" role="button" data-slide="next">
-                            <span id="carouselbutton" class="carousel-control-next-icon"></span>
-                        </a>
+
 
                 </div>
 
@@ -145,14 +131,14 @@
 
         <!--Start of Jumbotron-->
         <div class="jumbotron darkmodeactivate dark-modetwo">
-        <div class="speech-bubble col-5 justify-content-end" data-aos="fade-down-left" data-aos-duration="1500" id="notification">
-                        <p>
-                            The mini-projecst that I've produced so far are mostly to showcase solid understanding of JavaScript. It's more to give you an idea as to how I implement logic/conditional statements to produce a coherent mini-program. Design was not the focus here. Most of them have been through processing so far. The more my web dev experience grows, the more that will appear here so check back in the future. I look forward to showcasing my design skills soon!
-                        </p>
-                        <p>
-                            <button id="coolbeans" class="aligh-right">Cool Beans</button>
-                        </p>
-        </div>
+            <div class="d-none d-md-block speech-bubble col-5 justify-content-end" data-aos="fade-down-left" data-aos-duration="1500" id="notification">
+                            <p>
+                                The mini-projects that I've produced so far are mostly to showcase solid understanding of JavaScript. It's more to give you an idea as to how I implement logic/conditional statements to produce a coherent mini-program. Design was not the focus here. Most of them have been through processing so far. The more my web dev experience grows, the more that will appear here so check back in the future. I look forward to showcasing my design skills soon!
+                            </p>
+                            <p>
+                                <button id="coolbeans" class="aligh-right">Okay</button>
+                            </p>
+            </div>
             <div class="row">
                 <div class="col-6">
 
@@ -172,7 +158,7 @@
                 </div>
 
                 <!--Start of Row-->
-                <div class="row text-center welcome darkmodeactivate dark-mode">
+                <div class="row text-center welcome darkmodeactivate dark-mode justify-content-center">
 
                     <div class="col-md-4 card darkmodeactivate dark-mode" data-aos="zoom-in">
                         <div class="feature">
@@ -202,8 +188,27 @@
                                 <h3>Random Generator</h3>
                                 <p>Sometimes, randomness is good. Through processing, I was able to deliver a mountain range whose peaks and valleys are never repeated through code. </p> <p>If you want to deliver variety within a piece of content, it's possible. It's as simple as soft-coding your content with variables that have random values everytime you load. </p>
                                 <a href="randomgenerator.html" target="_blank"><button class="btn btn-success">Test</button></a>
-                                <a href="https://github.com/Jeilani/Portfolio/blob/master/michaeljordanflappy.js" target="_blank"><button class="btn btn-warning"> Source Code </button>
-                            </div></div></a>
+                                <a href="https://github.com/Jeilani/Portfolio/blob/master/michaeljordanflappy.js" target="_blank"><button class="btn btn-warning"> Source Code </button></a>
+                            </div>
+                    </div>
+
+                    <div class="col-md-4 card darkmodeactivate dark-mode" data-aos="zoom-in" data-aos-duration="2000">
+                        <div class="feature text-center">
+                            <img src="Images/PatatapThumbnail.png" width="110" id="patatappic">
+                            <h3>Patatap Project</h3>
+                            <p>With the help of Colt Steele in the Web Developer Bootcamp, I was able to add another animation library to my arsenal. This one is paper.js. On every letter tap on the keyboard we can play a sound and add a simple graphic with some pretty simple code. It ultimately creates a cool effect that mimicks the famous <a href="http://www.patatap.com" target="_blank">Patatap website.</a> </p>
+                            <a href="Patatap.html" target="_blank"><button class="btn btn-success">Test</button></a>
+                            <a href="" target="_blank"><button class="btn btn-warning"> Source Code </button></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 card darkmodeactivate dark-mode" data-aos="zoom-in" data-aos-duration="2000">
+                        <div class="feature text-center">
+                            <img src="Images/todolistthumbnail.png" width="110" id="patatappic">
+                            <h3>jQuery Todo List</h3>
+                            <p>This todo list app utilizes JavaScript and jQuery to implement several bits of functionality that allows one to add and delete things off the todo list.</p>
+                            <a href="todolist.html" target="_blank"><button class="btn btn-success">Test</button></a>
+                            <a href="" target="_blank"><button class="btn btn-warning"> Source Code </button></a>
+                        </div>
                     </div>
 
                 </div>
@@ -415,17 +420,12 @@
     AOS.init();
     </script>
     <script>
-          $(function() {
-    $('#toggle-two').bootstrapToggle({
-      on: 'Enabled',
-      off: 'Disabled'
-    });
-  })
 
 
-        $("#coolbeans").on("click", function(){
+
+$("#coolbeans").on("click", function(){
             console.log("it worked");
-            $(".speech-bubble").css("display", "none");
+            $(".speech-bubble").css("visibility", "hidden");
         });
 
         var darkmodeon = false;
@@ -437,7 +437,11 @@
         var darkmode4 = document.getElementsByClassName("dark-transparent");
         var darkmodebutton = document.getElementById("darkmodebutton");
 
-
+        $(function () {
+            $("#MagicCarousel").carousel({
+                interval: 1000* 10
+                });
+        });
 
 
 
